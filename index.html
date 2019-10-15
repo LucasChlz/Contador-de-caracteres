@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contador de caracteres</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body{
+            background-color: rgba(240, 61, 144, 0.753);
+        }
+        .contador{
+            display: flex;
+            font-size: 50px;
+            color: white;
+            border-radius: 2%;
+            text-align: center;
+            background-color: rgb(199, 36, 145);
+            -webkit-box-shadow: 0px 2px 18px 2px rgba(199,42,131,0.95);
+            -moz-box-shadow: 0px 2px 18px 2px rgba(199,42,131,0.95);
+            box-shadow: 0px 2px 18px 2px rgba(199,42,131,0.95);
+        }
+        #txtcont{
+            padding-left:48%;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 2%;
+        }
+        .header{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(199, 36, 145);
+            border-bottom: 5px solid rgb(238, 79, 153);
+            -webkit-box-shadow: 0px 2px 18px 2px rgba(199,42,131,0.95);
+            -moz-box-shadow: 0px 2px 18px 2px rgba(199,42,131,0.95);
+            box-shadow: 0px 2px 18px 2px rgba(199,42,131,0.95);
+        }
+        .header h2{
+            padding: 30px 0;
+            text-align: center;
+            font-weight: 500;
+            color: white;
+        }
+        .txt{    
+            width: 100%;
+            height: 300px;
+            resize: none;
+            font-size: 20px;
+            padding: 5px 1%;
+        }
+        .limit{
+            margin-top: 20px;
+            text-align: center;
+        }
+        button{
+            margin: 0 auto;
+            border: 0;
+            font-size: 16px;
+            color: white;
+            width: 250px;
+            height: 40px;
+            outline: none;
+            cursor: pointer;
+            -webkit-box-shadow: 0px 1px 5px 1px rgb(240, 34, 130);
+            -moz-box-shadow: 0px 1px 5px 1px rgb(240, 34, 130);
+            box-shadow: 0px 1px 5px 1px rgb(240, 34, 130);
+            background-color: rgb(240, 34, 130);
+        }
+    </style>
+    <body>
+        <div class="header">
+            <h2>CONTADOR DE CARACTERES</h2>
+        </div>
+        <div class="container">
+            <textarea placeholder="Digite o seu Texto." class="txt" id="msg"></textarea>
+            <div class="contador">
+                <p id="txtcont"></p><p id="txtlimit"></p>
+            </div>
+            <div class="limit">
+                <button id="btnlimit">Limitador</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
